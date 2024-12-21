@@ -4,4 +4,10 @@ version = "0.1.0"
 description = "Empirical analysis of sorting algorithms in Python"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "matplotlib-stubs>=0.2.0",
+    "matplotlib>=3.10.0",
+]
+
+[tool.mypy]
+ignore_missing_imports= true

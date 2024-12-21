@@ -12,11 +12,18 @@ def main():
     i_sorted, i_time = time_func(insertion_sort, arr)
     m_sorted, m_time = time_func(merge_sort, arr)
 
-    print("Bubble sort execution time: ", b_time)
-    print("Insertion sort execution time: ", i_time)
-    print("Merge sort execution time: ", m_time)
+    execution_durations = (
+        ("Bubble sort", b_time),
+        ("Insertion sort", i_time),
+        ("Merge sort", m_time),
+    )
 
-    print("All sorted values equal: ", b_sorted == i_sorted == m_sorted)
+    print("Listing all sorting algorithms in sorted from the best to the worst:")
+    for index, value in enumerate(sorted(execution_durations, key=lambda x: x[1])):
+        name, time = value
+        print(index + 1, name, f": {time:.6f}")
+
+    print("\nAll sorted values equal: ", b_sorted == i_sorted == m_sorted)
 
 
 if __name__ == "__main__":

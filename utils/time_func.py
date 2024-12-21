@@ -15,9 +15,9 @@ def time_func(func: Callable[..., Any], *args: Any, **kwargs: Any) -> tuple[Any,
     Returns:
     - tuple[Any, float]: A tuple containing the function's result and the time taken to execute it in seconds.
     """
-    start_time = time.time()
+    start_time = time.perf_counter()
     result = func(*args, **kwargs)
-    end_time = time.time()
+    end_time = time.perf_counter()
 
     execution_time = end_time - start_time
     return result, execution_time

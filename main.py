@@ -32,7 +32,7 @@ def main():
         time_values[label] = [time_1, time_2, time_3]
 
     print("Listing all sorting algorithms in sorted from the best to the worst:")
-    for idx, key in enumerate(time_values.keys()):
+    for idx, key in enumerate(sorted(time_values.keys(), key=lambda x: time_values[x])):
         print(f"{idx + 1}.", f"{key}: ")
         for idy, value in enumerate(time_values[key]):
             print(f"\t{idy + 1}.", f"{value:.6f}")

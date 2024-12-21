@@ -15,29 +15,13 @@ uv run main.py
 
 ### Example output
 
-```bash
-Listing all sorting algorithms in sorted from the best to the worst:
-1. Bubble sort:
-	1. 0.000242
-	2. 0.024012
-	3. 2.099213
-2. Insertion sort:
-	1. 0.000013
-	2. 0.000050
-	3. 0.000543
-3. Merge sort:
-	1. 0.000097
-	2. 0.000528
-	3. 0.006783
-4. Quick sort:
-	1. 0.000040
-	2. 0.000345
-	3. 0.002616
-5. Selection sort:
-	1. 0.000091
-	2. 0.008088
-	3. 0.817163
-```
+| type/input | 100      | 1000     | 10000    |
+| ---------- | -------- | -------- | -------- |
+| Insertion  | 0.000013 | 0.000052 | 0.000500 |
+| Quick      | 0.000045 | 0.000384 | 0.002873 |
+| Merge      | 0.000075 | 0.000555 | 0.007157 |
+| Selection  | 0.000093 | 0.007656 | 0.852193 |
+| Bubble     | 0.000154 | 0.019936 | 2.143636 |
 
 ### Avaitable sorting algorithms for benchmarking
 

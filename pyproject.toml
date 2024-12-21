@@ -1,7 +1,7 @@
 [project]
 name = "empirical-analysis-sorting-algorithms"
 version = "0.1.0"
-description = "Add your description here"
+description = "Empirical analysis of sorting algorithms in Python"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []

@@ -1,5 +1,10 @@
+from utils.generate_input import generate_random_array
+
+
 def main():
-    print("Hello from empirical-analysis-sorting-algorithms!")
+    arr = generate_random_array(100)
+
+    print("Random array of 100", arr)
 
 
 if __name__ == "__main__":

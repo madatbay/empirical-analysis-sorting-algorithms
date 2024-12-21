@@ -1,2 +1,3 @@
 # empirical-analysis-sorting-algorithms
-Empirical analysis of Sorting Algorithms in Pytohn
+
+Empirical analysis of Sorting Algorithms in Python
